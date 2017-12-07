@@ -37,7 +37,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutRequestMatcher(new AntPathRequestMatcher("/signout", "GET"))
                 .permitAll()
                 .and()
-                .apply(new SpringSocialConfigurer());
+                .apply(new SpringSocialConfigurer().alwaysUsePostLoginUrl(true));
         http.csrf().disable();
     }
 
