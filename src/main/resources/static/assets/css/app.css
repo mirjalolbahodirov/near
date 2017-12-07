@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+#main-app {
+    height: calc(100vh - 52px);
+}
+#main-app > .columns {
+    height: 100%;
+}
+#left-column {
+    border-right: 1px solid #00000014;
+    min-width: 450px;
+}
+#right-column {
+    position: relative;
+}
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #219cef;
+    animation: fa-spin .5s infinite linear;
+}
+#profile-image {
+    width: 75px;
+    border-radius: 100px;
+}
+#email-div {
+    border-bottom: 1px solid #00000014;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+.user-list article img {
+    border-radius: 100px;
+}
+.user-list .user-item {
+    margin: 0 !important;
+}
+.user-list .short-message {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 !important;
+}
+.menu-list a.is-active {
+    background-color: #219cef;
+    color: #fff;
+}
+#type-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+#right-column .navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+#right-column .navbar .navbar-brand img {
+    width: 44px;
+    height: 44px;
+    border-radius: 32px;
+    max-height: 100px;
+}
+#message-container {
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    bottom: 46px;
+    overflow-y: scroll;
+}
+#message-container article {
+    width: 75%;
+    border: 0;
+    margin-top: 0;
+}
+#message-container article > .media-content {
+    background-color: #219cef;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+#message-container article > .media-content strong {
+    color: #fff;
+}
+#message-container .is-48x48 img {
+    border-radius: 48px;
+}
